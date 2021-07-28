@@ -1,0 +1,2583 @@
+/* ----- Página de inicio ----- */
+
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(15,15,15);
+    background: linear-gradient(217deg, rgba(15,15,15,1) 0%, #006da8 50%, #f403ef 100%);
+}
+
+.barra{
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/* ----- Barra de navegación ----- */
+
+.minimus-logo{    
+    width: 40px;
+    height: 40px;
+    padding-bottom: 3px;
+}
+
+.navigationbar{
+    background: #03a9f4;
+    background: linear-gradient(0deg, #03a9f4 0%, #006aa4 100%);
+}
+
+.navigationbar .boton-nav{
+    font-size: 1.25rem;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+    height: 100% !important;        
+    transition: all 0.5s;
+}
+
+.navigationbar .boton-nav:hover{
+    color: whitesmoke !important;
+}
+
+.nav-item{    
+    margin-right: 2px;
+    padding: 0 15px 0 15px;    
+    transition: all 0.5s;
+}
+
+.nav-item:hover{
+    background: #03a9f4;
+    border-radius: 5px;
+}
+
+.products-drop .nav-link, .boton-compra{
+    color: whitesmoke !important;
+}
+
+.navigationbar .products-drop, .boton-compra, .ingreso-drop{    
+    font-family: 'Kanit', sans-serif;
+}
+
+.cart{
+    width: 25px;
+    height: 25px;
+    padding-bottom: 3px;
+}
+
+/* ----- Barra de navegación END ----- */
+
+/* ----- Carrusel ----- */
+
+.carrusel img{
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid black;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.9500175070028011) 0%, rgba(0,0,0,0.7763480392156863) 100%);
+    z-index: 0;
+}
+
+.carousel-control-prev{
+    z-index: 0;
+}
+
+.carousel-control-next{
+    z-index: 0;
+}
+
+/* ----- Carrusel END ----- */
+
+
+
+/* ----- Productos en oferta ----- */
+
+.ofertas .contenedor{
+    padding: 1% 0 1% 0;
+    background: #03a9f4;
+    background: linear-gradient(0deg, #03a9f4 0%, #006aa4 100%);
+}
+
+.ofertas .titulo{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ofertas .productos{
+    display: grid;   
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    /* grid-template-rows: repeat(auto-fill, minmax(100px, 200px)); */
+    gap: 10px 10px;
+
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.productos .items{
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+
+    border-radius: 5px;
+    max-height: 200px;
+    min-height: 100px;
+
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.productos .items:hover{
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.75);
+}
+
+.img-producto{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    grid-column: 1 / 7;
+    grid-row: 1 / 6;
+    
+    transition: 0.5s;    
+
+    z-index: 0;
+}
+
+.img-producto:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.nombre-producto{
+    width: 100%;
+    height: 100%;
+    background: rgb(123,31,162);
+    background: linear-gradient(90deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+    padding: 0 12px 0 12px;
+
+    grid-column: 1 / 7;
+    grid-row-end: 6 / 7;    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+    font-size: 100%;
+    font-family: 'Kanit', sans-serif;   
+    text-align: center;
+    
+    z-index: 1;
+}
+
+/* .productos .items p{
+    margin: 0;
+    height: 20%;
+}
+
+.productos .items .ofertas-imgs{
+    width: 100%;
+    height: 80%;
+}
+
+.productos .items img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.productos .items .nombre-producto p{
+    font-family: 'Kanit', sans-serif;    
+    color: black;
+    text-align: center;    
+    font-size: 1.5rem;    
+    margin: 15px;
+}
+
+.productos a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.productos a:hover{
+    box-shadow: 0px 0px 0px 6px rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 0px 6px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 6px rgb(0, 0, 0);
+} */
+
+
+
+
+/* ----- Productos en oferta END----- */
+
+/* ----- Página de inicio END ----- */
+
+
+
+
+/* ----- Footer ----- */
+
+footer{     
+    position: relative;
+    background: rgb(123,31,162);
+    background: linear-gradient(90deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+}
+
+footer a{
+    display: block;
+    color: whitesmoke;
+    /* border: 2px solid black; */
+    padding: 0.625rem 0 0.625rem 0;
+}
+
+.row a{
+    text-decoration: none;
+}
+
+.consultas-ubicacion{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke; 
+}
+
+.consultas-ubicacion h3{
+    margin: 50px 0 50px 0;
+}
+
+
+.form-map{
+    display: grid;
+    min-height: 40vh;
+    justify-content: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 10px;
+
+    padding-bottom: 25px;    
+}
+
+.form-map .item-grid{
+    display: grid;
+
+    grid-template: repeat(10, 1fr) / repeat(6, 1fr);
+    width: 100%;
+    height: 500px;
+
+    background: rgb(123,31,162);
+    background: linear-gradient(180deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+
+    box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.89);
+}
+
+.mapa, .mapa iframe{
+    grid-row: 1 / 11;
+    grid-column: 1 / 7;
+
+    width: 100%;
+    height: 100%;
+}
+
+.campos-ind{
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item-grid-consultas{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: 100%;
+    
+    background: rgb(123,31,162);
+    background: linear-gradient(180deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+
+    box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.89);
+}
+
+.item-grid-consultas .texto-grande textarea{
+    width: 100%;
+}
+
+.item-grid-consultas .boton-form{
+    height: 4rem;
+    padding: 0 5px 0 5px;
+    margin-bottom: 5px;
+}
+
+.item-grid-consultas .boton-form input{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    height: 4rem;
+
+    border: none;
+    outline: none;
+
+    padding: 5px;
+
+    background: #03a9f4;
+    transition: 0.25s;
+}
+
+.item-grid-consultas .boton-form input:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+/* .item-grid .nombre {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.item-grid .apellido{
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.item-grid .dir-correo{
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 100%;
+}
+
+.item-grid .mensaje, .mensaje form{
+    grid-column: 1 / 7;
+    grid-row: 4 / 9;
+    width: 100%;
+    height: 100%;
+} */
+
+.texto-grande{
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.boton-form{
+    grid-column: 4 / 7;
+    grid-row: 9 / 11;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 0;
+}
+
+.boton-posicion{
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+}
+
+.enviar{
+    width: 100%;
+    height: 100%;
+}
+
+.derechos{
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* ----- Footer END ----- */
+
+
+
+
+/* ----- Comercialización ----- */
+
+.preguntas{
+    position: relative;
+    /* background-color: brown;
+    border: 2px solid chartreuse; */
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.preguntas .accordion{
+    position: static;
+    width: 100%;
+}
+
+/* ----- Comercialización END----- */
+
+
+
+/* ----- ¿Quiénes somos? ----- */
+
+.bloque-info{
+    position: relative;
+    min-height: 80vh;
+    padding: 0;
+    top: 0.625rem;
+    bottom: 0.625rem;
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
+    
+    /* background: #03a9f4;
+    background: linear-gradient(0deg, #03a9f4 0%, #006aa4 100%); */
+
+}
+
+.bloque-info .informacion{
+    display: block;    
+    text-align: center;
+    color: #FFFFFF;
+    
+    font-size: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloque-info .informacion h2{    
+    display: block;
+    text-align: center;
+    padding: 0;
+
+    font-size: 1.5rem;
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.bloque-info .informacion p{
+    padding: 25px;
+}
+
+/* ----- ¿Quiénes somos? END ----- */
+
+
+
+/* ----- Página ingreso LOGIN/REGISTRO ----- */
+
+
+.pagina-ingreso{
+    height: 80vh;
+    width: 100%;
+}
+
+.pagina-ingreso .logueo-contenedor{   
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+
+    padding: 2.5rem 1rem 2.5rem 1rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+
+    align-items: stretch;
+
+    min-width: 150px;
+    max-width: 400px;
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #7b1fa2;
+    background: linear-gradient(180deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .ingresar{
+    text-align: center;
+
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke; 
+    background-color: #7b1fa2;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .logueo-formulario .logueo-campos{
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .logueo-formulario .logueo-boton{
+    text-align: center;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .logueo-formulario .logueo-boton input{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+
+    padding: 5px;
+
+    background: #03a9f4;
+    transition: 0.25s;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .logueo-formulario .logueo-boton input:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .aviso-registro{
+    text-align: center;
+    padding: 8px;
+
+    font-family: 'Kanit', sans-serif;   
+    color: black;
+    background-color: whitesmoke;
+}
+
+.pagina-ingreso .logueo-contenedor .logueo-tarjeta .logueo-formulario .php-error-login p{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;    
+    font-size: 1.3rem;
+    text-align: center;    
+
+    margin: 0;
+    padding: 5px;    
+}
+
+
+/* ----- Página ingreso LOGIN END----- */
+
+
+
+/* ----- Página ingreso REGISTRO ----- */
+
+.pagina-registro{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;    
+    
+    min-height: 80vh;
+    width: 100%;
+}
+
+.pagina-registro .items-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background: rgb(15,15,15);
+    background: linear-gradient(-217deg, rgba(15,15,15,1) 0%, #006da8 50%, rgb(15, 15, 15) 100%);
+}
+
+.pagina-registro .registrar{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;    
+
+    margin: 0;
+    padding: 10px;
+}
+
+.pagina-registro .registro-formulario{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    min-width: 200px;
+    max-width: 400px;
+
+    /* background-color: brown; */
+}
+
+.pagina-registro .registro-formulario .registro-campos{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.pagina-registro .registro-formulario .registro-boton {
+    text-align: center;
+}
+
+.pagina-registro .registro-formulario .registro-boton input{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+
+    padding: 5px;
+
+    background: #03a9f4;
+    transition: 0.25s;
+}
+
+.pagina-registro .registro-formulario .registro-boton input:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+.php-error{
+    background: rgb(72,4,3);
+    background: linear-gradient(315deg, rgba(72,4,3,1) 0%, rgba(194,0,0,1) 100%);
+    border: solid 1px whitesmoke;
+    border-radius: 7px;
+
+    margin: 5px;
+}
+
+.php-error p{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;    
+    font-size: 1rem;
+    text-align: center;    
+
+    border: solid 1px whitesmoke;
+
+    margin: 0;
+    padding: 5px;    
+}
+
+.pagina-registro .aviso-logueo{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;   
+    color: black;
+    background-color: whitesmoke;
+
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+
+/* ----- Página ingreso REGISTRO END----- */
+
+
+
+/* ----- Información de contacto ----- */
+
+
+/* Posicionamiento de elementos en la grilla */
+.grilla-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.313rem;
+
+    min-height: 80vh;
+    padding: 0;
+}
+
+.grilla-contacto .info-telefono{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.grilla-contacto .img-telefono{
+    display: none;
+}
+
+.grilla-contacto .info-ubicacion{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.grilla-contacto .img-ubicacion{
+    display: none;
+}
+
+.grilla-contacto .info-redes{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.grilla-contacto .img-redes{
+    display: none;
+}
+
+
+/* Estilo a los títulos */
+.grilla-contacto h2{
+    text-align: center;
+    color: whitesmoke;
+
+    font-family: 'Kanit', sans-serif;  
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(63,16,83,0.75) 25%, rgba(110,27,124,1) 50%, rgba(63,16,83,0.75) 75%, rgba(0,0,0,0) 100%);
+}
+
+
+/* Estilos a los párrafos */
+.grilla-contacto p{
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+/* ----- Información de contacto END ----- */
+
+
+
+/* ----- Términos y condiciones de uso ----- */
+
+.terminos{
+    background-color: #006da8;
+}
+
+.terminos h2{
+    text-align: center;
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+.terminos p{
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+
+
+
+/* ----- Página del administrador INICIO ----- */
+
+.admin-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    min-height: 80vh;
+
+    padding: 0;
+    
+    /* box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);     */
+}
+
+.admin-view p{
+    font-family: 'Kanit', sans-serif;    
+    font-size: 1.5rem;
+    text-align: center;
+
+    width: 100%;
+
+    border: solid 2px whitesmoke;    
+
+    color: whitesmoke;
+}
+
+.admin-view a{
+    font-family: 'Kanit', sans-serif;    
+    font-size: 1.5rem;
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: whitesmoke;
+
+    background: rgb(72,4,3);
+    background: linear-gradient(315deg, rgba(72,4,3,1) 0%, rgba(194,0,0,1) 100%);
+
+    border: solid 0.213rem whitesmoke;
+
+    padding: 1rem;
+    margin: 0.5rem;
+
+    width: 95%;    
+}
+
+.admin-view a:hover{
+    background:#c20000
+}
+
+/* ----- Página del administrador FIN ----- */
+
+
+
+
+/* ----- Formulario alta de productos INICIO ----- */
+
+.titulo-form-alta-producto{
+    font-family: 'Kanit', sans-serif;    
+    font-size: 1.5rem;
+    text-align: center;
+
+    width: 100%;
+
+    margin-top: 1rem;
+
+    color: whitesmoke;
+}
+
+.form-alta-producto{
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 80vh;
+
+}
+
+.alta-producto-campos{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+#imagen{
+    width: 100%;
+    padding: 10px;
+}
+
+.alta-producto-indicadores{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+
+    /* padding: 10px 10px 0 10px; */
+}
+
+.boton-agregar-producto{
+    text-align: center;
+    padding: 10px;
+}
+
+.boton-agregar-producto input{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;    
+
+    border: 2px solid whitesmoke;
+    outline: none;
+
+    padding: 5px;
+
+    background: #7b1fa2;
+    transition: 0.25s;
+}
+
+.boton-agregar-producto input:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+/*----- Formulacio de alta de productos FIN -----*/
+
+
+
+
+/*----- Gestion de productos INICIO -----*/
+
+
+.gestion-productos{
+    
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(auto-fill); */
+
+    width: 100vw;
+    padding: 0;
+    row-gap: 3rem;
+    
+}
+
+.gestion-productos .datos-producto{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+
+    border: solid 1px whitesmoke;
+
+}
+
+.gestion-productos .datos-producto .boton-modificar{
+
+    display: flex;
+
+    grid-column: 1 / 4;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+}
+
+
+.gestion-productos .datos-producto .boton-modificar a{
+    
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    background: rgb(72,4,3);
+    background: linear-gradient(315deg, rgba(72,4,3,1) 0%, rgba(194,0,0,1) 100%);
+    
+    flex-grow: 1;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.25s;
+}
+
+.gestion-productos .datos-producto .boton-modificar a:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+.gestion-productos .datos-producto div{
+
+    color: whitesmoke;
+    padding: 5px;
+
+    border: solid 1px whitesmoke;
+
+    overflow: hidden;
+
+    background: rgb(0,166,68);
+    background: linear-gradient(0deg, rgba(0,166,68,1) 0%, rgba(28,65,47,1) 100%);
+}
+
+.gestion-productos .datos-producto div h2{
+    
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    font-size: 1rem;
+
+    width: 100%;
+
+    border-bottom: solid 1px whitesmoke;
+
+}
+
+
+/* Cambia de color en función del bajo stock */
+
+.gestion-productos .stock-danger{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+
+    border: solid 1px whitesmoke;
+
+}
+
+
+.gestion-productos .stock-danger .boton-modificar{
+
+    display: flex;
+
+    grid-column: 1 / 4;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+}
+
+
+.gestion-productos .stock-danger .boton-modificar a{
+    
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    background: rgb(72,4,3);
+    background: linear-gradient(315deg, rgba(72,4,3,1) 0%, rgba(194,0,0,1) 100%);
+
+    flex-grow: 1;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.25s;
+}
+
+.gestion-productos .stock-danger .boton-modificar a:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+.gestion-productos .stock-danger div{
+
+    color: whitesmoke;
+    padding: 5px;
+
+    border: solid 1px whitesmoke;
+
+    overflow: hidden;
+
+    background: rgb(221,44,0);
+    background: linear-gradient(0deg, #ff4516 0%, #7c1900 100%);
+}
+
+.gestion-productos .stock-danger div h2{
+    
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    font-size: 1rem;
+
+    width: 100%;
+
+    border-bottom: solid 1px whitesmoke;
+
+}
+
+
+/* ----- Gestión de productos FIN -----*/
+
+
+/* ----- Formulario de edición de producto INICIO ----- */
+
+.form-edicion-producto .imagen-actual{
+    max-height: 200px;
+}
+
+.contenedor-img-actual{
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+
+/* ----- Formulario edición de producto FIN ----- */
+
+
+
+
+
+
+
+
+
+/* ----- Carrito de compras - INICIO ----- */
+
+.carrito{
+    padding: 0 !important;
+    min-height: 80vh;
+}
+
+.titulo-carrito{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    font-size: 2rem;    
+
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.productos-en-carrito{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-bottom: 3rem;
+}
+
+.productos-en-carrito .contenedor-info{
+    border: solid black 1px;
+    background: rgb(117,117,117);
+    background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(255,255,255,1) 100%);
+}
+
+.productos-en-carrito .datos{
+    text-align: center;
+}
+
+.carrito .columnas{    
+    font-family: 'Kanit', sans-serif;   
+    color: black;
+    font-size: 1rem;    
+
+    border-bottom: solid black 2px;
+    padding: 2px;
+
+    text-align: center;
+}
+
+.productos-en-carrito .eliminar-producto-carrito{
+    grid-column: 1 / 3;
+
+    text-align: center;
+}
+
+.eliminar-producto-carrito a{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    font-size: 1rem;
+
+    text-decoration: none;
+
+    padding: 0.8rem;
+    border-radius: 10px;
+
+    background: rgb(72,4,3);
+    background: linear-gradient(315deg, rgba(72,4,3,1) 0%, rgba(194,0,0,1) 100%);
+
+    transition: 0.5s;
+}
+
+.eliminar-producto-carrito a:hover{
+    background: whitesmoke;
+    color: black;
+    border: solid 1px black;
+}
+
+.carrito .vaciar-carrito{
+    text-align: center;
+    
+    margin-bottom: 2rem;
+}
+
+.carrito .vaciar-carrito a{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    font-size: 2rem;
+
+    text-decoration: none;
+
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: solid whitesmoke 3px;
+
+    background-color: #c20000;
+
+    transition: 0.25s;
+}
+
+.carrito .vaciar-carrito a:hover{
+    background: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.carrito .precio-final{
+    text-align: center;
+    font-size: 2rem;
+
+    background: rgb(0,166,68);
+    background: linear-gradient(0deg, rgba(0,166,68,1) 0%, rgba(28,65,47,1) 100%);
+
+    color: white;
+    padding: 1rem 2.5rem;
+    margin: 0 auto 3rem;
+
+    border-radius: 1rem;
+    border: solid whitesmoke 4px;
+
+}
+
+
+/* ----- Formulario de envío ----- */
+
+.titulo-datos-envio{
+    font-family: 'Kanit', sans-serif;   
+    color: whitesmoke;
+    font-size: 2rem;    
+
+    padding: 0.75rem;
+
+    text-align: center;
+
+    margin: 0;
+}
+
+.productos-en-carrito .boton-eliminar{
+    align-self: center;
+}
+
+.formulario-carrito form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    padding-bottom: 1rem;
+    margin: 0.5rem;    
+    
+    background: #7b1fa2;
+
+    border-radius: 20px;    
+
+    align-self: center;
+    
+    margin-bottom: 2rem;
+}
+
+.formulario-carrito form label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-carrito form input{
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+
+    border: none;
+    outline: none;
+}
+
+.formulario-carrito .columnas-form{
+    font-family: 'Kanit', sans-serif;   
+    color: black;
+    font-size: 1rem;    
+
+    text-align: center;
+    padding: 2px;
+
+    margin: 0%;
+}
+
+.productos-en-carrito .garantia-dato{
+    display: none;
+}
+
+.formulario-carrito .boton-comprar{
+    width: 10rem;
+    align-self: center;
+    padding-top: 2rem;
+}
+
+.formulario-carrito .boton-comprar input{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+
+    border: solid 3px whitesmoke;    
+
+    background: rgb(0,166,68);
+    background: linear-gradient(0deg, rgba(0,166,68,1) 0%, rgba(28,65,47,1) 100%);
+
+    transition: 0.2s;
+}
+
+.formulario-carrito .boton-comprar input:hover{
+    background: white;
+    color: black;
+}
+
+
+/* ----- Carrito de compras - FIN ----- */
+
+
+
+
+
+
+
+/* ----- Vista del producto a comprar - INICIO ----- */
+
+.vista-producto{
+    min-height: 80vh;
+}
+
+.vista-producto .tarjeta-producto{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 200px;
+    max-width: 400px;
+
+    background: rgb(15,15,15);
+    background: linear-gradient(-217deg, rgba(15,15,15,1) 0%, #7b1fa2 50%, rgb(15, 15, 15) 100%);
+
+    margin: 2rem auto;
+
+    border-radius: 5px;
+}
+
+.vista-producto .tarjeta-producto h2{
+    margin: 0;
+}
+
+.vista-producto .tarjeta-producto img{
+    max-width: 290px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.vista-producto .tarjeta-producto .info-tarjeta{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.vista-producto .tarjeta-producto .nombre-producto{
+    font-size: 1.2rem;
+    padding: 0.275rem;
+}
+
+.vista-producto .tarjeta-producto .informacion-producto{
+    margin: 1rem;
+}
+
+.vista-producto .tarjeta-producto .informacion-producto .cantidad-pedido{    
+    border: none;
+    text-decoration: none;
+    outline: none;
+    margin-left: 1rem;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.vista-producto .tarjeta-producto label{
+    text-align: center;
+    width: 100%;
+}
+
+.vista-producto .tarjeta-producto label input{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+
+    border: solid 3px whitesmoke;    
+    border-radius: 10px;
+
+    background: rgb(0,166,68);
+    background: linear-gradient(0deg, rgba(0,166,68,1) 0%, rgba(28,65,47,1) 100%);
+
+    transition: 0.2s;
+}
+
+.vista-producto .tarjeta-producto label input:hover{
+    background: white;
+    color: black;
+}
+
+.vista-producto .info-especificaciones{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+
+    margin-top: 2rem;
+
+    text-align: center;
+}
+
+.vista-producto .contenido-especificaciones{
+    color: black;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+}
+
+
+
+/* ----- Vista del producto a comprar - FIN ----- */
+
+
+
+
+
+/* ----- Listado de ventas ----- */
+
+.encabezado-listado-ventas{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.ventas-listadas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+
+    padding: 0 !important;
+    margin-bottom: 2rem;
+
+    width: 100%;
+}
+
+.ventas-listadas .datos-venta{
+
+    background: rgb(117,117,117);
+    background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(255,255,255,1) 100%);
+
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.ventas-listadas .datos-venta h2{
+    color: black;
+    font-size: 1rem;
+    border-bottom: solid black 1px;
+    padding: 5px;
+}
+
+.ventas-listadas .datos-venta p{
+    color: black;
+    padding: 5px;
+    margin: 0;
+}
+
+.ventas-listadas .fecha{
+    background: rgb(221,44,0);
+    background: linear-gradient(0deg, #ff4516 0%, #7c1900 100%);
+}
+
+.ventas-listadas .fecha h2{
+    color: white;
+}
+
+.ventas-listadas .fecha p{
+    font-weight: 600;
+    color: white;
+}
+
+.ventas-listadas .boton-accion{
+    display: flex;
+    grid-column: 1 / 5;
+    padding: 0;
+}
+
+.ventas-listadas .boton-accion a{
+
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    margin: auto;    
+    padding: 3px 0;
+
+    background: rgb(15,15,15);
+    background: linear-gradient(-217deg, rgba(15,15,15,1) 0%, #7b1fa2 50%, rgb(15, 15, 15) 100%);
+
+    width: 100%;
+
+    transition: 0.5s;
+
+    text-decoration: none;
+}
+
+.ventas-listadas .boton-accion a:hover{
+    background: white;
+    color: black;
+    border: solid 1px black;
+}
+
+
+/*----- LISTADO DE VENTAS FIN -----*/
+
+
+
+
+/*----- DETALLE DE VENTAS INICIO -----*/
+
+.detalle-venta{
+    min-height: 80vh;
+}
+
+.detalle-venta .nombre-fecha p{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.detalle-venta .encabezado-detalle-venta{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.detalle-venta .detalle-productos{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.detalle-venta .columnas-lista{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.detalle-venta .columnas-lista h2{
+    font-size: 1rem;
+
+    background-color: whitesmoke;
+
+    border: solid black 1px;
+
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.detalle-venta .detalle-productos div{
+    background: rgb(117,117,117);
+    background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(255,255,255,1) 100%);
+
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.detalle-venta .detalle-productos h2{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/*----- Formulario de búsqueda INICIO -----*/
+
+.elementos-busqueda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 1.5rem;
+}
+
+.leyenda-busqueda{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-bottom: 0.5rem;
+    
+    grid-column: 1 / 4;
+}
+
+.input-busqueda{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 4px;
+    width: 100%;
+
+    grid-column: 1 / 3;
+}
+
+.boton-busqueda{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    margin: 0 0.5rem;
+
+    grid-column: 3 / 4;
+
+    height: 100%;
+}
+
+.boton-busqueda:hover{
+    background: cornflowerblue;
+}
+
+.reestablecer-listado{    
+    grid-column: 1 / 2;
+
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    padding: 2px;    
+    
+    background: whitesmoke;
+    color: black;
+    
+}
+
+.elementos-busqueda a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.reestablecer-listado:hover{
+    background: cornflowerblue;
+    color: black;
+}
+
+.busqueda-productos{
+    display: flex;
+    justify-content: center;
+}
+
+.busqueda-productos .elementos-busqueda{
+    margin-top: 2rem;
+    max-width: 350px;
+}
+
+
+/*----- Formulario de búsqueda FIN -----*/
+
+
+
+
+/*----- Listado de las consultas de los usuarios INICIO -----*/
+
+.encabezado{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.busqueda-consultas{
+    max-width: 350px;
+    margin: 1rem 0;
+}
+
+.listado-consultas{
+    min-height: 80vh;
+    padding: 0 !important;
+}
+
+.listado-consultas .consultas-grid-leido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;    
+    margin-bottom: 2rem;
+
+    background-color: RGBA(0,106,78,0.90);
+
+    padding: 1rem 0;
+}
+
+.listado-consultas .consultas-grid-no-leido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;    
+    margin-bottom: 2rem;
+
+    background-color: RGBA(170,0,0,0.70);
+
+    padding: 1rem 0;
+}
+
+.listado-consultas .consulta{
+    grid-column: 1 / 3;
+    height: 100px;
+
+    overflow: scroll;
+}
+
+.listado-consultas .consulta a{
+    color: black;
+    text-decoration: none;
+}
+
+.listado-consultas .leido{    
+    grid-column: 2 / 3;
+
+    text-align: center;
+}
+
+.listado-consultas .datos{
+    /* background: rgb(117,117,117);
+    background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(255,255,255,1) 100%); */
+
+    background-color: whitesmoke;
+
+    border: solid 1px black;
+    padding: 5px;
+
+    text-align: center;
+
+    overflow: auto;
+}
+
+.listado-consultas h2{
+    font-size: 1rem;
+}
+
+
+
+
+
+/*----- Listado de las consultas de los usuarios FIN -----*/
+
+
+
+/*----- Consulta del usuario ampliada INICIO -----*/
+.consulta-ampliada{
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 80vh;
+
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+    background-color: RGBA(0,0,0,0.30);
+    border-radius: 1rem;
+
+    max-width: 800px;
+
+}
+
+.consulta-ampliada .correo{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    font-size: 1.2rem;
+}
+
+.consulta-ampliada .consulta-completa{
+    padding: 5px;
+    color: whitesmoke;
+
+    font-size: 1.1rem;
+
+    max-width: 625px;
+    margin: 0 auto;
+}
+
+
+
+/*----- Vista de venta exitosa -----*/
+.venta-exitosa{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+    background-color: RGBA(0,0,0,0.30);
+    border-radius: 1rem;
+
+    height: 80vh;
+}
+
+.venta-exitosa a{
+    width: max-content;
+    align-self: center;
+
+    background-color: indigo;
+    color: white;
+
+    border: solid 3px white;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.venta-exitosa a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/*----- Consulta del usuario ampliada FIN -----*/
+
+
+
+
+/*----- Filtro de búsqueda de productos del admin INICIO -----*/
+
+
+/*----- Filtro de búsqueda de productos del admin FIN -----*/
+
+
+
+/*----- Información de usuarios INICIO -----*/
+
+.contenedor-todos-usuarios{
+    padding: 0 !important;
+}
+
+.info-usuarios-grid{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 2rem;
+
+    padding: 0.5rem !important;
+    background-color: RGBA(0,0,0,0.30);
+    border-radius: 1rem;
+}
+
+
+.info-usuarios-grid .datos{
+    background: rgb(117,117,117);
+    background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(255,255,255,1) 100%);
+
+    border: solid 1px black;
+
+    overflow-x: scroll;
+
+    padding: 0 5px;
+}
+
+.info-usuarios-grid .datos h2{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    text-align: center;
+
+    font-size: 1rem;
+}
+
+.info-usuarios-grid .datos p{
+    text-align: center;
+}
+
+.info-usuarios-grid .boton{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.info-usuarios-grid .datos .dar-baja{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    background-color: red;
+    padding: 5px;
+
+    width: max-content;
+
+    align-self: center;
+
+    border-radius: 5px;
+}
+
+.info-usuarios-grid .datos .dar-alta{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    background-color: green;
+    padding: 5px;
+
+    width: max-content;
+
+    align-self: center;
+
+    border-radius: 5px;
+}
+
+
+
+/*----- Información de usuarios FIN -----*/
+
+
+
+
+
+
+
+
+
+/* ----- Media Queries ----- */
+
+/* Pantallas 768px */
+
+@media(min-width: 768px){
+
+
+    /* ----- Productos en oferta ----- */
+
+    .ofertas .productos{
+        display: grid;   
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+        grid-template-rows: repeat(auto-fill, minmax(200px, 300px));
+        gap: 10px 10px;
+    
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .nombre-producto{
+        width: 100%;
+        height: 100%;
+        background: rgb(123,31,162);
+        background: linear-gradient(90deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+        padding: 0 12px 0 12px;
+    
+        grid-column: 1 / 7;
+        grid-row-end: 6 / 7;    
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: whitesmoke;
+        font-size: 150%;
+        font-family: 'Kanit', sans-serif;   
+        text-align: center;
+        
+        z-index: 1;
+    }
+
+    .productos .items{
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+    
+        border-radius: 5px;
+        max-height: 300px;
+        min-height: 100px;
+    
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    /* ----- Productos en oferta END ----- */
+
+    /* ----- ¿Quiénes somos? ----- */
+
+    .bloque-info .informacion{
+        display: block;    
+        text-align: center;
+        color: #FFFFFF;
+        
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .bloque-info .informacion h2{    
+        display: block;
+        text-align: center;
+        padding: 0;
+    
+        font-size: 1.75rem;
+        
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+    }
+
+    /* ----- ¿Quiénes somos? END ----- */
+
+    /* ----- Footer ----- */
+
+    .form-map{
+        display: grid;
+        min-height: 40vh;
+        justify-content: center;
+    
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+        gap: 100px;
+    
+        padding-bottom: 25px;    
+    }
+
+    .form-map .item-grid{
+        display: grid;
+    
+        grid-template: repeat(10, 1fr) / repeat(6, 1fr);
+        max-width: 100%;
+        height: 400px;    
+        
+        background: rgb(123,31,162);
+        background: linear-gradient(180deg, rgb(63, 16, 83) 0%, rgb(110, 27, 124) 100%);
+    }
+
+    /* ----- Términos y condiciones de uso ----- */
+
+    .terminos{
+        background-color: #006da8;
+    }
+
+    .terminos h2{
+        text-align: center;
+        color: whitesmoke;
+        padding: 1rem;
+    }
+
+    .terminos p{
+        color: whitesmoke;
+        padding: 2rem;
+    }
+
+
+
+    /*----- Gestion de productos INICIO -----*/
+
+
+    .gestion-productos .datos-producto{
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);        
+        grid-template-rows: repeat(2, minmax(30px, 90px));
+
+        width: 100%;
+
+        border: solid 1px whitesmoke;
+
+    }
+
+    .gestion-productos .datos-producto .boton-modificar{
+        grid-column: 1 / 6;
+    }
+
+    /* Cambia de color en función del bajo stock INICIO */
+
+    .gestion-productos .stock-danger{
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, minmax(30px, 90px));
+    
+        width: 100%;
+    
+        border: solid 1px whitesmoke;
+    
+    }
+
+    .gestion-productos .stock-danger .boton-modificar{
+        grid-column: 1 / 6;
+    }
+
+    /* Cambia de color en función del bajo stock FIN */
+
+    /* Configuración de la imagen INICIO */
+
+    .gestion-productos .imagen-de-lista{
+        display: flex;
+        justify-content: center;
+        grid-row: 1 / 3;
+        grid-column: 5 / 6;
+    }
+
+    .gestion-productos .imagen-de-lista img{
+        object-fit: contain;
+    }
+
+    /* Configuración de la imagen FIN */
+
+
+    /* ----- Formulario de edición de producto INICIO ----- */
+
+    .form-edicion-producto .imagen-actual{
+        height: 200px;
+    }
+
+    .contenedor-img-actual{
+        display: flex;
+        align-items: flex-start;    
+        flex-direction: column;
+    }
+
+    /* ----- Formulario edición de producto FIN ----- */
+
+
+
+
+    /* ----- Carrito de compras - INICIO ----- */
+
+    .vista-producto .tarjeta-producto{
+        display: grid;
+
+        grid-template-columns: repeat(9, 1fr);
+        /* grid-template-rows: repeat(9, 1fr); */
+    
+        min-height: 200px;
+        min-width: 700px;
+    
+        background: rgb(15,15,15);
+        background: linear-gradient(-217deg, rgba(15,15,15,1) 0%, #7b1fa2 50%, rgb(15, 15, 15) 100%);
+    
+        margin: 2rem auto;
+    
+        border-radius: 5px;
+    }
+
+    .vista-producto .tarjeta-producto .nombre-producto{
+        font-size: 1.6rem;
+        padding: 0.275rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 10;
+    }
+    
+    .vista-producto .tarjeta-producto h2{
+        text-align: center;
+        padding: 0;
+    }
+    
+    .vista-producto .tarjeta-producto img{
+        display: block;
+        grid-row: 2 / 8;
+        grid-column: 1 / 6;
+
+        margin: auto;
+
+    }
+    
+    .vista-producto .tarjeta-producto .info-tarjeta{
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        grid-row: 1 / 10;
+        grid-column: 1 / 10 !important;
+    }    
+  
+    .vista-producto .tarjeta-producto .informacion-producto{
+        margin: 1rem;
+        grid-row: 2 / 8;
+        grid-column: 6 / 10 !important;
+    }
+    
+    .vista-producto .tarjeta-producto .informacion-producto .cantidad-pedido{    
+        border: none;
+        text-decoration: none;
+        outline: none;
+        margin-left: 1rem;
+        border-radius: 5px;
+    
+        text-align: center;
+    }
+    
+    .vista-producto .tarjeta-producto label{
+        text-align: center;
+        margin: auto;
+        grid-column: 1 / 10 !important;
+        grid-row: 8 / 10;
+    }
+    
+    .vista-producto .tarjeta-producto label input{
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        font-size: 1.5rem;
+    
+        border: solid 3px whitesmoke;    
+        border-radius: 10px;
+    
+        background: rgb(0,166,68);
+        background: linear-gradient(0deg, rgba(0,166,68,1) 0%, rgba(28,65,47,1) 100%);
+    
+        transition: 0.2s;
+    }
+
+    .vista-producto .contenido-especificaciones{
+        max-width: 700px;        
+        margin: 0 auto 2rem;
+    }
+    
+
+    
+
+    .productos-en-carrito{
+        display: grid;
+
+        grid-template-columns: repeat(5, 1fr);
+
+        margin-bottom: 3rem;
+    }
+
+    .productos-en-carrito .eliminar-producto-carrito{
+        grid-column: auto;
+    }
+
+    .formulario-carrito form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        padding-bottom: 1rem;
+        margin: 0.5rem;    
+        
+        background: #7b1fa2;
+    
+        border-radius: 20px;    
+    
+        margin: auto;
+        margin-bottom: 5rem;
+
+        max-width: 600px;
+    }
+
+    .carrito{        
+        padding: 1rem !important;
+        background-color: RGBA(0,0,0,0.30);
+        border-radius: 1rem;
+    }
+
+    .carrito .precio-final{
+        width: 80%;
+    }
+
+
+
+    /* ----- Listado de ventas ----- */
+
+    .ventas-listadas{
+        grid-template-columns: repeat(4, 1fr);   
+    }
+
+    .ventas-listadas .fecha{
+        grid-column: auto;
+        padding: 5px;
+    }
+    
+    .ventas-listadas .fecha h2{
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .ventas-listadas .fecha p{
+        padding: 5px;
+        text-align: center;
+    }
+
+    .ventas-listadas .boton-accion{
+        grid-column: auto;
+    }
+
+    .ventas-listadas .boton-accion a{
+        padding: 20px;
+        width: auto; 
+        border-radius: 10px;
+    }
+
+
+
+    /* Detalle de las ventas */
+    .detalle-venta{
+        padding: 1rem !important;
+        background-color: RGBA(0,0,0,0.30);
+        border-radius: 1rem;
+    }
+
+
+
+    /*----- Formulario de búsqueda INICIO -----*/
+
+    .busqueda-ventas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .busqueda-productos{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .busqueda-productos .elementos-busqueda{
+        align-self: flex-end;
+    }
+
+
+
+
+    /* Listado de las consultas */
+    .listado-consultas .consultas-grid-leido{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 80px);
+        width: 100%;    
+
+        padding: 10px;
+
+        border-radius: 10px;
+    }
+
+    .listado-consultas .consultas-grid-no-leido{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 80px);
+        width: 100%;    
+
+        padding: 10px;
+
+        border-radius: 10px;
+    }
+    
+    .listado-consultas .consulta{
+        grid-column: 3 / 5;
+        height: 160px;
+    }
+    
+    .listado-consultas .consulta a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .listado-consultas .leido{    
+        grid-column: 2 / 3;
+    
+        text-align: center;
+    }
+    
+    .listado-consultas .datos{
+        /* background: rgb(117,117,117);
+        background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(255,255,255,1) 100%); */
+    
+        background-color: whitesmoke;
+    
+        border: solid 1px black;
+        padding: 5px;
+    
+        text-align: center;
+    }
+    
+    .listado-consultas h2{
+        font-size: 1rem;
+    }
+
+
+
+    /*----- Filtro de búsqueda de productos del admin INICIO -----*/
+
+    .busqueda-productos-admin{
+        display: flex;
+        flex-direction: row;
+
+        /* max-width: 350px; */
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .filtro-busqueda{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtro-busqueda input{
+        margin-top: 1rem;
+
+        text-align: center;
+
+        text-decoration: none;
+        outline: none;
+        border: none;
+    }
+
+
+
+/*----- Filtro de búsqueda de productos del admin FIN -----*/
+
+
+
+
+
+
+
+}
+
+/* Pantallas a 768px END */
+
+
+
+/* Pantallas a 1024px */
+@media(min-width: 1024px){
+            
+    /* ----- Información de contacto ----- */
+
+
+    /* Posicionamiento de elementos en la grilla */
+    .grilla-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.313rem;
+
+        min-height: 80vh;
+        padding: 0;
+    }
+
+    .grilla-contacto .info-telefono{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .grilla-contacto .img-telefono{
+        display: flex;
+
+        margin: auto;
+
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        width: 25rem;
+    }
+
+    .grilla-contacto .info-ubicacion{
+        display: flex;
+
+        flex-direction: column;
+
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        margin: auto;
+    }
+
+    .grilla-contacto .img-ubicacion{
+        display: flex;
+
+        margin: auto;
+        padding: 1.5rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        width: 25rem;
+    }
+
+    .grilla-contacto .info-redes{
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .grilla-contacto .img-redes{
+        display: flex;
+
+        margin: auto;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+
+    /* Estilo a los títulos */
+    .grilla-contacto h2{
+        text-align: center;
+        color: whitesmoke;
+
+        font-family: 'Kanit', sans-serif;  
+        
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(63,16,83,0.75) 25%, rgba(110,27,124,1) 50%, rgba(63,16,83,0.75) 75%, rgba(0,0,0,0) 100%);
+    }
+
+
+    /* Estilos a los párrafos */
+    .grilla-contacto p{
+        text-align: center;
+        color: whitesmoke;
+        padding: 5px;
+    }
+
+    /* ----- Información de contacto END ----- */
+
+
+
+    /*----- Información de usuarios INICIO -----*/
+
+    .contenedor-todos-usuarios{
+        padding: 0.5rem !important;
+        background-color: RGBA(0,0,0,0.30);
+        border-radius: 1rem;
+    }
+
+    .info-usuarios-grid{
+        display: grid;
+
+        grid-template-columns: repeat(6, 1fr);
+
+        margin-bottom: 2rem;
+
+        padding: 0.5rem !important;
+        background-color: RGBA(0,0,0,0.30);
+        border-radius: 1rem;
+    }
+}
